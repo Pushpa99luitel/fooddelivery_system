@@ -1,0 +1,23 @@
+<table>
+<tr>
+<thead>
+<th>ID</th>
+<th>NAME</th>
+<th>EMAIL</th>
+<th>PASSWORD</th>
+
+</thead>
+</tr>
+{% for user in users %}
+<tr>
+<tbody>
+<td>{{user.user_id}}</td>
+<td>{{user.name}}</td>
+<td>{{user.email}}</td>
+<td>{{user.password}}</td>
+</tbody>
+</tr>
+
+{% endfor %}
+
+</table>

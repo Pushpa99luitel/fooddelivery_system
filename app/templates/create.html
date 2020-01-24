@@ -1,0 +1,11 @@
+
+{% block content %}
+<form method="post" action="/create" enctype="multipart/form-data">
+{% csrf_token %}
+username:{{ form.username }}
+email:{{ form.email }}
+password:{{ form.password }}
+image:{{form.image}}
+<button type="submit">submit</button>
+</form>
+{% endblock content %}
